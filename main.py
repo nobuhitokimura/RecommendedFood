@@ -10,7 +10,7 @@ import csv
 ###
 ### 変数
 ###
-foodData = []   # 料理名
+foodName = []   # 料理名
 Amount = []     # 金額
 Calorie = []    # カロリー
 Protein = []    # プロテイン
@@ -29,9 +29,10 @@ for c in foodData:
         continue
     else:
         l = c.split(',')
-        foodData.append(l[1]);
-        Amount = []
-        Calorie = []
-        Protein = []
-        Lipid = []
-        Carbs = []
+        foodName.append(l[1]);
+        Amount.append(l[2]);
+        Calorie.append(l[3]);
+        Protein.append(l[4]);
+        Lipid.append(l[5]);
+        Carbs.append(l[6]);
+
